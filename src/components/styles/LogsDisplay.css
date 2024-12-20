@@ -1,0 +1,74 @@
+.logs-display {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logs-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .logs-table {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  .logs-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .logs-content {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .logs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px 10px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .logs-row:last-child {
+    border-bottom: none;
+  }
+  
+  .logs-empty {
+    text-align: center;
+    padding: 10px;
+    color: #999;
+  }
+  
+  .logs-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .logs-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .logs-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
