@@ -24,4 +24,5 @@ yarn-error.log*
 package-lock.json
 README.md
 
-src/config/firebaseConfig.js
+
+.env
