@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles/LoginPage.css";
+import { auth } from "../config/firebaseConfig";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const LoginPage = () => {
   const navigate = useNavigate();
 
-  
-  
   const handleLogin = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -31,7 +31,6 @@ const LoginPage = () => {
 
       if (response.ok) {
         localStorage.setItem("token", data.token);
-
         navigate("/smpp-client");
       } else {
         alert(data.message || "Login failed!");
@@ -41,6 +40,37 @@ const LoginPage = () => {
       alert("An error occurred. Please try again later.");
     }
   };
+
+  const handleGoogleSignIn = async () => {
+    const provider = new GoogleAuthProvider();
+  
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const idToken = await result.user.getIdToken();
+  
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/google-signin`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ idToken }),
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.text(); // Log raw response to debug
+        console.error("Error Response:", errorData);
+        throw new Error("Google Sign-In failed");
+      }
+  
+      const data = await response.json();
+      localStorage.setItem("token", data.token);
+      navigate("/smpp-client");
+    } catch (error) {
+      console.error("Google Sign-In error:", error);
+      alert("Google Sign-In failed. Please try again.");
+    }
+  };
+  
 
   return (
     <div className="login-page">
@@ -79,7 +109,9 @@ const LoginPage = () => {
           <div className="extra-links">
             <a href="/reset" className="reset-link">Forgot your password? Reset</a>
             <div className="separator">or</div>
-            <button className="google-login">Sign in with Google</button>
+            <button className="google-login" onClick={handleGoogleSignIn}>
+              Sign in with Google
+            </button>
             <a href="/signup" className="signup-link">Don’t have an account? Sign up</a>
           </div>
         </div>
