@@ -1,0 +1,96 @@
+[
+    {
+      "time": "2024-06-21 19:20:45 EEST",
+      "receiver": "639501771134",
+      "sender": "etnesseM",
+      "message": "0081 is your verification code.",
+      "type": "Outgoing SMS",
+      "country": "Philippines",
+      "parts": "1 SMS",
+      "status": "Sent"
+    },
+    {
+      "time": "2024-06-21 19:20:45 EEST",
+      "receiver": "639501771134",
+      "sender": "etnesseM",
+      "message": "0081 is your verification code.",
+      "type": "Outgoing SMS",
+      "country": "Philippines",
+      "parts": "1 SMS",
+      "status": "Sent"
+    },
+    {
+      "time": "2024-06-21 18:45:50 EEST",
+      "receiver": "639501771127",
+      "sender": "Messente",
+      "message": "9865 is your verification code.",
+      "type": "Viber",
+      "country": "Philippines",
+      "parts": "-",
+      "status": "Seen"
+    },
+    {
+      "time": "2024-06-21 18:32:29 EEST",
+      "receiver": "34687120126",
+      "sender": "etnesseM",
+      "message": "Hi! Your claim number is 65395. Information about the damage has been sent to your e-mail.",
+      "type": "Outgoing SMS",
+      "country": "Germany",
+      "parts": "1 SMS",
+      "status": "Delivered"
+    },
+    
+        {
+          "time": "2025-01-01 10:20:45 EEST",
+          "receiver": "639501771134",
+          "sender": "Messente",
+          "message": "Your verification code is 1234.",
+          "type": "Outgoing SMS",
+          "country": "Philippines",
+          "parts": "1 SMS",
+          "status": "Delivered"
+        },
+        {
+          "time": "2025-01-01 09:45:50 EEST",
+          "receiver": "639501771127",
+          "sender": "Messente",
+          "message": "Your OTP is 5678.",
+          "type": "Viber",
+          "country": "Philippines",
+          "parts": "-",
+          "status": "Seen"
+        },
+        {
+          "time": "2025-01-01 08:32:29 EEST",
+          "receiver": "34687120126",
+          "sender": "CompanyA",
+          "message": "Your claim ID is 87654. Details sent to your email.",
+          "type": "Outgoing SMS",
+          "country": "Germany",
+          "parts": "1 SMS",
+          "status": "Delivered"
+        },
+        {
+          "time": "2025-01-01 07:15:10 EEST",
+          "receiver": "447501123456",
+          "sender": "CompanyB",
+          "message": "Thank you for your feedback. Here's a 10% coupon: SAVE10",
+          "type": "WhatsApp",
+          "country": "United Kingdom",
+          "parts": "-",
+          "status": "Failed"
+        },
+        {
+          "time": "2025-01-01 06:45:05 EEST",
+          "receiver": "1234567890",
+          "sender": "Admin",
+          "message": "Happy New Year! Wishing you a great 2025!",
+          "type": "Outgoing SMS",
+          "country": "United States",
+          "parts": "1 SMS",
+          "status": "Sent"
+        }
+      
+      
+  ]
+  

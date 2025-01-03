@@ -72,8 +72,9 @@ button:disabled {
 
 .status {
   margin-top: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 16px;
+  
 }
 
 .status-indicator {
@@ -90,4 +91,7 @@ button:disabled {
 
 .status-indicator.bound {
   background-color: green;
+}
+.chart-section {
+  margin-top: 50px;
 }

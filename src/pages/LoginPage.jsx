@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles/LoginPage.css";
 import { auth } from "../config/firebaseConfig";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const LoginPage = () => {
 
       if (response.ok) {
         localStorage.setItem("token", data.token);
-        navigate("/smpp-client");
+        navigate("/dashboard");
       } else {
         alert(data.message || "Login failed!");
       }

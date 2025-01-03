@@ -131,3 +131,16 @@ label[type="checkbox"] {
     margin: 0 auto;
   }
 }
+
+/* register page */
+
+.login-page.register, .signup-link.register,.login-title.register {
+  color:#a3bb36
+}
+.login-form.register {
+  background-color: #eef3e1;
+}
+.login-button.register {
+  background-color: #a3bb36;
+  border: 1px solid #a3bb36;
+}
