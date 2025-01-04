@@ -1,228 +1,215 @@
-/* Global Styles */
 body {
-    margin: 0;
-    font-family: Poppins, sans-serif;
-    background-color: #f4f5f8; /* Light gray background for the entire page */
-  }
-  
-  /* Dashboard Container */
-  .dashboard-container {
-    display: flex; /* Ensures sidebar and main content are aligned horizontally */
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    width: 250px; /* Fixed width for sidebar */
-    background-color: #fff; /* White background for sidebar */
-    border-right: 1px solid #ddd; /* Subtle border to separate sidebar */
-    padding: 1rem; /* Space around sidebar content */
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background-color: #f4f5f8;
+}
 
-  }
-  
-  .sidebar .logo img {
-    width: 100px;
-   
-    margin-bottom: 2rem; /* Space below the logo */
-  }
-  
-  .sidebar ul {
-    list-style: none; /* Removes default bullet points from the list */
-    padding: 0;
-  }
-  
-  .sidebar li {
-    display: flex;
-    align-items: center; /* Vertically aligns text and icons */
-    padding: 0.5rem 0; /* Space between each menu item */
-    cursor: pointer;
-  }
-  
-  .sidebar li svg {
-    margin-right: 0.5rem; /* Space between the icon and the text */
-  }
-  
-  .sidebar li:hover {
-    background-color: #f0f0f0; /* Highlight menu item on hover */
-    border-radius: 4px;
-  }
-  
-  /* Contact Section in Sidebar */
-  .contact-section {
-    margin-top: 2rem; /* Space above the contact section */
-    /* text-align: center; */
-    padding: 1rem;
-    border-top: 1px solid #ddd; /* Separator line above the contact section */
-  }
-  
-  .contact-section h3 {
-    font-size: 1rem; /* Font size for "Your Contact" heading */
-    margin-bottom: 0.5rem; /* Space below the heading */
-    color: #555; /* Slightly darker gray for the heading text */
-  }
-  
-  .contact-avatar {
-    border-radius: 50%; /* Circular image for contact avatar */
-    width: 50px; /* Fixed width for avatar */
-    height: 50px; /* Fixed height for avatar */
-    margin-bottom: 0.5rem; /* Space below the avatar */
-  }
-  
-  .contact-info strong {
-    display: block; /* Makes the name appear on a new line */
-    margin-bottom: 0.3rem; /* Space below the name */
-    font-size: 0.9rem; /* Slightly smaller font for name */
-  }
-  
-  .contact-info a {
-    color: #007bff; /* Link color matching the theme */
-    text-decoration: none;
-    font-size: 0.85rem; /* Smaller font for email */
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover for links */
-  }
-  
-  .contact-info p {
-    font-size: 0.85rem; /* Smaller font for job title */
-    margin: 0.3rem 0; /* Small space around job title */
-    color: #777; /* Subtle gray for job title text */
-  }
-  
-  .contact-info .phone {
-    display: flex;
-    align-items: center; /* Aligns phone icon and number */
-    justify-content: center;
-    gap: 0.5rem; /* Space between icon and phone number */
-    font-size: 0.85rem; /* Smaller font for phone number */
-    margin-top: 0.5rem; /* Space above the phone section */
-  }
-  
-  .contact-button {
-    margin-top: 0.5rem; /* Space above the button */
-    background-color: #007bff; /* Primary button color */
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.85rem; /* Smaller font for the button */
-  }
-  
-  .contact-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  /* Header Styles */
-  .header {
-    display: flex;
-    justify-content: space-between; /* Aligns left and right sections */
-    align-items: center; /* Vertically centers content */
-    padding: 1rem 2rem; /* Space inside the header */
-    background-color: #fff; /* White background for header */
-    border-bottom: 1px solid #ddd; /* Subtle bottom border */
-  }
-  
-  .header-title h1 {
-    margin: 0;
-    font-size: 1.5rem; /* Font size for page title */
-    font-weight: bold;
-  }
-  
-  .balance-actions {
-    display: flex;
-    align-items: center; /* Aligns credit and actions horizontally */
-    gap:10px;
-  }
-  
-  .actions {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem; /* Space between icons and user info */
-  }
-  
-  .actions svg {
-    font-size: 1.2rem; /* Icon size */
-    color: #555; /* Default icon color */
-  }
-  
-  .actions .user-info {
-    display: flex;
-    align-items: center; /* Aligns user circle and text */
-    gap: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .user-info span {
-    background-color: #007bff; /* Blue background for user circle */
-    color: white;
-    border-radius: 50%; /* Circular shape */
-    padding: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .actions svg:hover {
-    color: #007bff; /* Highlight icons on hover */
-    cursor: pointer;
-  }
-  
-  /* Tabs Section */
-  .tabs {
-    display: flex;
-    padding: 1rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .tabs span {
-    margin-right: 2rem;
-    cursor: pointer;
-  }
-  
-  /* Stats Cards */
-  .stats-container {
-    display: flex;
-    gap: 2rem;
-    margin: 2rem;
-  }
-  
-  .card {
-    flex: 1; /* Equal width for all cards */
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
-  }
-  
-  .card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Footer */
-  .footer {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 0.9rem; /* Smaller font for footer */
-    color: #777; /* Subtle gray color for footer */
-  }
-  
-  button {
-   
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.9rem; /* Standard button font size */
-  }
-  
-  button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.sidebar .logo img {
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.sidebar li svg {
+  margin-right: 0.5rem;
+}
+
+.sidebar li:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.contact-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.contact-section h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.contact-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info p {
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+  color: #777;
+}
+
+.contact-info .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.contact-button {
+  margin-top: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.balance-actions {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.actions svg {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.actions .user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.user-info span {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions svg:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs span {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.stats-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
