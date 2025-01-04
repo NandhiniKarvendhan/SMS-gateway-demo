@@ -64,7 +64,7 @@ const LoginPage = () => {
 
       const data = await response.json();
       localStorage.setItem("token", data.token);
-      navigate("/smpp-client");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Google Sign-In error:", error);
       alert("Google Sign-In failed. Please try again.");
