@@ -21,14 +21,12 @@ const Sidebar = () => {
         <li onClick={() => handleNavigation("/send-sms")}>
           <FiMessageSquare /> Send SMS
         </li>
-        <li onClick={() => handleNavigation("/send-viber")}>
-          <FiMessageSquare /> Send Viber
-        </li>
+       
         <li onClick={() => handleNavigation("/phonebook")}>
           <FiBook /> Phonebook
         </li>
-        <li onClick={() => handleNavigation("/senders")}>
-          <FiUsers /> Senders
+        <li onClick={() => handleNavigation("/user-management")}>
+          <FiUsers /> User Management
         </li>
         <li onClick={() => handleNavigation("/number-lookup")}>
           <FiUserCheck /> Number lookup
@@ -39,8 +37,8 @@ const Sidebar = () => {
         <li onClick={() => handleNavigation("/subscription-links")}>
           <FiGlobe /> Subscription links
         </li>
-        <li onClick={() => handleNavigation("/smpp-client")}>
-          <FiSettings /> Admin
+        <li onClick={() => handleNavigation("/sms-management")}>
+          <FiSettings /> SMS Management
         </li>
       </ul>
 

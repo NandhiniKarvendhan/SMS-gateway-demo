@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Sidebar from "../components/Sidebar.jsx";
+import Header from "../components/Header.jsx";
+import "./styles/Dashboard.css";
+
 import ConnectionForm from '../components/ConnectionForm';
 import CommandsSection from '../components/CommandsSection'; 
 import LogsDisplay from '../components/LogsDisplay';
@@ -11,8 +15,11 @@ function SMPPClientPage() {
   };
 
   return (
+    <div className="dashboard-container">
+    <Sidebar />
+    <div className="main-content">
+      <Header />
     <div className="smpp-client-page">
-      <h1 className="page-title">SMPP Client</h1>
 
       <div className="form-container">
         {/* Connection Form */}
@@ -30,6 +37,8 @@ function SMPPClientPage() {
 
       {/* Logs Display */}
       <LogsDisplay logs={logs} />
+    </div>
+    </div>
     </div>
   );
 }

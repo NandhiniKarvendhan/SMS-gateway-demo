@@ -7,14 +7,13 @@ const Header = () => {
 
   const pageTitles = {
     "/dashboard": "Dashboard",
-    "/send-sms": "Send SMS",
-    "/send-viber": "Send Viber",
+    "/send-sms": "Send SMS",    
     "/phonebook": "Phonebook",
     "/senders": "Senders",
     "/number-lookup": "Number Lookup",
     "/api-setup": "API Setup",
     "/subscription-links": "Subscription Links",
-    "/admin": "Admin",
+    "/sms-management": "SMS Management",
   };
 
   const pageTitle = pageTitles[location.pathname] || "Messente";

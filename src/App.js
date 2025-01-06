@@ -19,11 +19,11 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/history" element={<DataPage />} />
 
-        <Route path="/smpp-client" element={<SMPPClientPage />} />
+        <Route path="/sms-management" element={<SMPPClientPage />} />
         <Route path="/send-sms" element={<SentSms/>} />
         <Route path="/send-viber" element={<h2>Send Viber Page</h2>} />
         <Route path="/phonebook" element={<h2>Phonebook Page</h2>} />
-        <Route path="/senders" element={<h2>Senders Page</h2>} />
+        <Route path="/user-management" element={<h2>User Management Page</h2>} />
         <Route path="/number-lookup" element={<h2>Number Lookup Page</h2>} />
         <Route path="/api-setup" element={<h2>API Setup Page</h2>} />
         <Route path="/subscription-links" element={<h2>Subscription Links Page</h2>} />
