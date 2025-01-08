@@ -51,12 +51,16 @@
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 8px;
 }
 
 .form-label {
+  width: 20% ;
   font-weight: bold;
+}
+.form-label.check-box {
+  width: auto;
 }
 
 .form-control {
@@ -118,8 +122,8 @@ textarea.form-control {
   background-color: #218838;
 }
 
-.form-group input{
-  width: auto;
+.form-group input, .form-group select{
+  width: 50%;
 }
 /* Checkbox */
 .form-group input[type="checkbox"] {

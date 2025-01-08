@@ -18,7 +18,7 @@ const SentSms = () => {
             <div className="form-group">
               <label htmlFor="from" className="form-label">From</label>
               <select id="from" name="from" className="form-control">
-                <option value="Messente">Messente</option>
+                <option value="Messente">MultiChat</option>
               </select>
             </div>
             <div className="form-group">
@@ -37,14 +37,14 @@ const SentSms = () => {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Hello! Welcome to Messente. Use templates to make sending messages more efficient."
+                placeholder="Hello! Welcome to MultiChat. Use templates to make sending messages more efficient."
                 className="form-control"
                 rows="4"
               ></textarea>
             </div>
             <div className="form-group">
-              <label className="form-label">
-                <input type="checkbox" />
+              <label className="form-label check-box">
+                <input  type="checkbox" />
                 Replace characters with Unicode
               </label>
             </div>
