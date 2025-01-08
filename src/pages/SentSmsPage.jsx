@@ -15,13 +15,13 @@ const SentSms = () => {
             <div className="tab">Scheduled Messages</div>
           </div>
           <form className="send-sms-form">
-            <div className="form-group">
+            <div className="form-group row">
               <label htmlFor="from" className="form-label">From</label>
               <select id="from" name="from" className="form-control">
                 <option value="Messente">MultiChat</option>
               </select>
             </div>
-            <div className="form-group">
+            <div className="form-group row">
               <label htmlFor="to" className="form-label">To</label>
               <input
                 type="text"
@@ -32,7 +32,7 @@ const SentSms = () => {
               />
               <button type="button" className="insert-group-button">Insert group</button>
             </div>
-            <div className="form-group">
+            <div className="form-group row">
               <label htmlFor="message" className="form-label">Message</label>
               <textarea
                 id="message"
@@ -42,7 +42,7 @@ const SentSms = () => {
                 rows="4"
               ></textarea>
             </div>
-            <div className="form-group">
+            <div className="form-group row">
               <label className="form-label check-box">
                 <input  type="checkbox" />
                 Replace characters with Unicode
