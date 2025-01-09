@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FiHome, FiMessageSquare, FiUsers, FiBook, FiSettings, FiDatabase, FiGlobe,  FiUserCheck } from "react-icons/fi";
+import { FiHome, FiMessageSquare, FiSettings} from "react-icons/fi";
 import logo from "../assets/images/demo_logo.jpg";
 import profile from "../assets/images/profile-picture.png";
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
           <FiMessageSquare /> Send SMS
         </li>
        
-        <li onClick={() => handleNavigation("/phonebook")}>
+        {/* <li onClick={() => handleNavigation("/phonebook")}>
           <FiBook /> Phonebook
         </li>
         <li onClick={() => handleNavigation("/user-management")}>
@@ -36,7 +36,7 @@ const Sidebar = () => {
         </li>
         <li onClick={() => handleNavigation("/subscription-links")}>
           <FiGlobe /> Subscription links
-        </li>
+        </li> */}
         <li onClick={() => handleNavigation("/sms-management")}>
           <FiSettings /> SMS Management
         </li>
