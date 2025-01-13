@@ -15,10 +15,9 @@ const RegisterPage = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://login-backend-3rwp.onrender.com";
   
     try {
-      const response = await fetch(`${API_BASE_URL}/register`, {
+      const response = await fetch(`http://localhost:9090/user/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

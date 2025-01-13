@@ -19,10 +19,9 @@ const LoginPage = () => {
     }
 
     setIsLoading(true); 
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://login-backend-3rwp.onrender.com";
 
     try {
-      const response = await fetch(`${API_BASE_URL}/login`, {
+      const response = await fetch(`http://localhost:9090/user/signin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
