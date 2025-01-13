@@ -19,7 +19,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/history" element={<DataPage />} />
 
-        <Route path="/sms-management" element={<SMPPClientPage />} />
+        <Route path="/smsc-management" element={<SMPPClientPage />} />
         <Route path="/send-sms" element={<SentSms/>} />
         <Route path="/send-viber" element={<h2>Send Viber Page</h2>} />
         <Route path="/phonebook" element={<h2>Phonebook Page</h2>} />

@@ -5,8 +5,8 @@ function ConnectionForm({ addLog }) {
   const [port, setPort] = useState('2775');
   const [systemId, setSystemId] = useState('');
   const [password, setPassword] = useState('');
-  const [systemType, setSystemType] = useState('');
-  const [version, setVersion] = useState('v3.4 (0x34)');
+  const [systemType, setSystemType] = useState('SMPP');
+  // const [version, setVersion] = useState('v3.4 (0x34)');
   const [status, setStatus] = useState('Unbound');
   const [isDisconnectEnabled, setIsDisconnectEnabled] = useState(false);
 
@@ -66,7 +66,7 @@ function ConnectionForm({ addLog }) {
             onChange={(e) => setSystemType(e.target.value)}
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Version</label>
           <select
             value={version}
@@ -75,11 +75,11 @@ function ConnectionForm({ addLog }) {
             <option>v3.4 (0x34)</option>
             <option>v5.0 (0x50)</option>
           </select>
-        </div>
+        </div> */}
       </div>
       <div className="button-group">
         <button className="btn connect" onClick={handleConnect}>
-          Connect
+          Test Connection
         </button>
         <button className="btn tx-only">TX-only</button>
         <button className="btn rx-only">RX-only</button>

@@ -13,10 +13,10 @@ const Header = () => {
     "/number-lookup": "Number Lookup",
     "/api-setup": "API Setup",
     "/subscription-links": "Subscription Links",
-    "/sms-management": "SMS Management",
+    "/smsc-management": "SMSC Management",
   };
 
-  const pageTitle = pageTitles[location.pathname] || "Messente";
+  const pageTitle = pageTitles[location.pathname] || "Multi Chat";
 
   return (
     <header className="header">

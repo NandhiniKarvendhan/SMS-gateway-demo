@@ -37,8 +37,8 @@ const Sidebar = () => {
         <li onClick={() => handleNavigation("/subscription-links")}>
           <FiGlobe /> Subscription links
         </li> */}
-        <li onClick={() => handleNavigation("/sms-management")}>
-          <FiSettings /> SMS Management
+        <li onClick={() => handleNavigation("/smsc-management")}>
+          <FiSettings /> SMSC Management
         </li>
       </ul>
 
